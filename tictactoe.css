@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --winning-blocks:balck;
+}
+
+#gameboard {
+    
+    width:450px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+.box{
+    
+    height:150px;
+    width:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:orange;
+    font-size:120px;
+    border-right:2px solid;
+    border-bottom: 2px solid;
+    font-family: "Lucida Console", "Courier New", monospace;
+}  
+
+.box:nth-child(3n){
+    border-right:none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom:none;
+}
+
+#container{
+    display:flex;
+    padding:40px;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color: black;
+}
+button{
+    background-color:orange;
+    border-radius:10px;
+    margin:10px;
+    padding:10px;
+    font-size:15px;
+    color:#333;
+    border:1px solid grey;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+button:hover{
+    background-color:grey ;
+    color:orange;
+    border:1px solid orange;
+    cursor:pointer;
+    transform:translateY(-2px);
+}
+
+#heading, #winning-Player, #player-Turn {
+    color:orange;
+    
+    margin:10px;
+    font-size:40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+#heading{
+    margin:10px
+}
